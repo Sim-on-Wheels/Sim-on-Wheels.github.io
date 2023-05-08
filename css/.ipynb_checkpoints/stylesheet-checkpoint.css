@@ -1,0 +1,37 @@
+a {
+  color: #036d19;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #EC7357;
+  text-decoration: underline;
+}
+
+.one {
+  position: relative;
+}
+
+.two {
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #000;
+
+}
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+.project_image {
+  width: 200px;
+  margin-right: 40px;
+  max-width: 100%;
+  height: auto;
+}
