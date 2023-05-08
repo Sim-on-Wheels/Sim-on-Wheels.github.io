@@ -13,23 +13,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <base href="/"> -->
-    <link rel="stylesheet" href="../css/bulma.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
     
-    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
 </head>
 
 <body>
@@ -88,7 +88,7 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="text-center">
-                    <image src="../assets/teaser.png" class="img-responsive" alt="teaser"/>
+                    <image src="./assets/teaser.png" class="img-responsive" alt="teaser"/>
                 </div><br> 
                 
                 <h3>
@@ -96,9 +96,9 @@
                 </h3>
                 <p class="text-justify">
                     We present Sim-on-Wheels, a safe, realistic, and
-                    vehicle-in-loop framework to test autonomous vehicles’ perfor-
-                    mance in the real world under safety-critical scenarios. Sim-on-
-                    wheels runs on a self-driving vehicle operating in the physical
+                    vehicle-in-loop framework to test autonomous vehicles’ performance 
+                    in the real world under safety-critical scenarios. Sim-on-wheels 
+                    runs on a self-driving vehicle operating in the physical
                     world. It creates virtual traffic participants with risky behaviors
                     and seamlessly inserts the virtual events into images perceived
                     from the physical world in real-time. The manipulated images
@@ -112,7 +112,6 @@
                     fidelity and low risk.
                 </p>
             </div>
-
             <div class="col-md-10 col-md-offset-1">
                 <h4>
                     Generalization to Other Environments
@@ -120,86 +119,98 @@
                 <p class="text-justify">
                     We can easily adapt to any environment as long as the scenario is compatible with the environment mapping. For example, we ran our Sim-on-Wheels on KITTI-360 data to simulate scenarios on the street roads as shown below:
                 </p>
-                
+            </div>
+            <div class="col-md-8 col-md-offset-2">                
                 <h5><strong>1. KITTI-360</strong></h5>
-                <div class="col-lg-4 text-center">
-                    <ul class="nav nav-pills nav-justified">
-                        <li>
-                            <h5><strong>Original</strong></h5>
-                            <image src="../assets/kitti/1130-00016-origin.png" width="400" />
-                        </li>
-                        <li>
-                            <h5><strong>Sim-on-Wheels</strong></h5>
-                            <image src="../assets/kitti/1130-00016-insert.png" width="400" />
-                        </li>
-                        <br/>
-                        <li>
-                            <image src="../assets/kitti/1538-00014-origin.png" width="400" />
-                        </li>
-                        <li>
-                            <image src="../assets/kitti/1538-00014-insert.png" width="400" />
-                        </li>
-                        <br/>
-                        <li>
-                            <image src="../assets/kitti/250-00030-origin.png" width="400" />
-                        </li>
-                        <li>
-                            <image src="../assets/kitti/250-00030-insert.png" width="400" />
-                        </li>
-                        <br/>
-                        <li>
-                            <image src="../assets/kitti/250-00031-origin.png" width="400" />
-                        </li>
-                        <li>
-                            <image src="../assets/kitti/250-00031-insert.png" width="400" />
-                        </li>
-                        <br/>
-                        <li>
-                            <image src="../assets/kitti/610-00018-origin.png" width="400" />
-                        </li>
-                        <li>
-                            <image src="../assets/kitti/610-00018-insert.png" width="400" />
-                        </li>
-                        <br/>
-                        <li>
-                            <image src="../assets/kitti/610-00022-origin.png" width="400" />
-                        </li>
-                        <li>
-                            <image src="../assets/kitti/610-00022-insert.png" width="400" />
-                        </li>
-                        <br/>
-                    </ul>
-                </div>
+                <table width="100%">
+                  <tbody>
+                    <tr>
+                      <td align="center" width="50%">
+                        <font size="3" color="black">Original</font>
+                      </td>
+                      <td align="center" width="50%">
+                        <font size="3" color="black">Sim-on-Wheels</font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" width="50%">
+                        <img src="./assets/kitti/1130-00016-origin.png" class="img-responsive">
+                      </td>
+                      <td align="center" width="50%">
+                        <img src="./assets/kitti/1130-00016-insert.png" class="img-responsive">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" width="50%">
+                        <img src="./assets/kitti/1538-00014-origin.png" class="img-responsive">
+                      </td>
+                      <td align="center" width="50%">
+                        <img src="./assets/kitti/1538-00014-origin.png" class="img-responsive">
+                      </td>
+                    </tr>
+                      <tr>
+                      <td align="center" width="50%">
+                        <img src="./assets/kitti/250-00030-origin.png" class="img-responsive">
+                      </td>
+                      <td align="center" width="50%">
+                        <img src="./assets/kitti/250-00030-insert.png" class="img-responsive">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" width="50%">
+                        <img src="./assets/kitti/250-00031-origin.png" class="img-responsive">
+                      </td>
+                      <td align="center" width="50%">
+                        <img src="./assets/kitti/250-00031-insert.png" class="img-responsive">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" width="50%">
+                        <img src="./assets/kitti/610-00018-origin.png" class="img-responsive">
+                      </td>
+                      <td align="center" width="50%">
+                        <img src="./assets/kitti/610-00018-insert.png" class="img-responsive">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
             </div>
 
 
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-8 col-md-offset-2">
                 <h5><strong>2. Tests in Street Scenarios</strong></h5>
                 <p class="text-justify">
                     Additionally, to showcase the generalization,  we ran Sim-on-Wheels on our GEM vehicle in daily streets beyond agent-free setting, e.g., empty testbed. Due to our university’s policy, we are not allowed to test outside our test track at large scale. We plan to test in more complicated real-world environments in future. 
 
                 </p>
-                <div class="col-lg-4 text-center">
-                    <ul class="nav nav-pills nav-justified">
-                        <li>
-                            <h5><strong>Original</strong></h5>
-                            <image src="../assets/street1.png" width="400" />
-                        </li>
-                        <li>
-                            <h5><strong>Sim-on-Wheels</strong></h5>
-                            <image src="../assets/street1_inserted.png" width="400" />
-                        </li>
-                        <br/>
-                        <li>
-                            <image src="../assets/street2.png" width="400" />
-                        </li>
-                        <li>
-                            <image src="../assets/street2_inserted.png" width="400" />
-                        </li>
-                        <br/>
-                        <br/>
-                    </ul>
-                </div>
+                <table width="100%">
+                  <tbody>
+                    <tr>
+                      <td align="center" width="50%">
+                        <font size="3" color="black">Original</font>
+                      </td>
+                      <td align="center" width="50%">
+                        <font size="3" color="black">Sim-on-Wheels</font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" width="50%">
+                        <img src="./assets/street1.png" class="img-responsive">
+                      </td>
+                      <td align="center" width="50%">
+                        <img src="./assets/street1_inserted.png" class="img-responsive">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" width="50%">
+                        <img src="./assets/street2.png" class="img-responsive">
+                      </td>
+                      <td align="center" width="50%">
+                        <img src="./assets/street2_inserted.png" class="img-responsive">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
             </div>
 
             <div class="col-md-10 col-md-offset-1">
@@ -209,15 +220,9 @@
                 <p class="text-justify">
                     Unlike real-world road testing, Sim-on-Wheels can insert agents itself into the background and can scale to insert many agents without significant loss in rendering speed. We conducted the following experiment under multiple resolution and various number of virtual objects. Our experiment shows that under the same resolution, the rendering speed is not affected much by the increasing number of virtual objects. 
                 </p>
-                <div class="col-lg-4 text-center">
-                    <ul class="nav nav-pills nav-justified">
-                        <li>
-                            <image src="../assets/rendering.png" width="400" />
-                        </li>
-                    </ul>
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <img src="./assets/rendering.png" class="img-responsive" />
                 </div>
-
-
             </div>
 
             <div class="col-md-10 col-md-offset-1">
@@ -227,7 +232,7 @@
                 </h3>
                 <div class="text-center">
                     <video width="720" height="540" controls>
-                              <source src="../assets/suppl_video.mp4" type="video/mp4">
+                              <source src="./assets/suppl_video.mp4" type="video/mp4">
                               Your browser does not support the video tag.
                     </video>
                 </div><br>
