@@ -25,9 +25,13 @@ a:hover {
     color: #000;
 
 }
-table {
+.table-spaced {
     border-collapse:separate;
-    border-spacing: 0 1em;
+    border-spacing: 1em 0em;
+}
+.table2-spaced {
+  border-collapse:separate;
+  border-spacing: 0 1em;
 }
 .footer .icon-link {
     font-size: 25px;
