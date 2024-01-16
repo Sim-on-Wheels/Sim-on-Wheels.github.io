@@ -293,6 +293,28 @@
                 </div>
             </div>
 
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                  <h3>
+                      Citation
+                  </h3>
+                  <div class="form-group col-md-10">
+                    If you find our work useful in your research, please consider citing:
+                      <textarea id="codemirror" class="form-control" readonly style="white-space: pre; overflow-x: auto;">
+@inproceedings{shen2023simonwheels,
+    author={Shen, Yuan and Chandaka, Bhargav and Lin, Zhi-Hao and Zhai, Albert and Cui, Hang and Forsyth, David and Wang, Shenlong},
+    journal={IEEE Robotics and Automation Letters}, 
+    title={Sim-on-Wheels: Physical World in the Loop Simulation for Self-Driving}, 
+    year={2023},
+    volume={8},
+    number={12},
+    pages={8192-8199},
+    doi={10.1109/LRA.2023.3325689}
+}
+                      </textarea>
+                  </div>
+              </div>
+            </div>
             
             <div class="row">
               <div class="col-md-10 col-md-offset-1">
@@ -306,5 +328,21 @@
             </div>
         </div>
     </div>
+    <script>
+      var textarea = document.getElementById('codemirror');
+      textarea.addEventListener('input', autoResize, false);
+      
+      function autoResize() {
+          this.style.height = 'auto';
+          this.style.height = this.scrollHeight + 'px';
+  
+          // Set the width
+          var scrollWidth = this.scrollWidth;
+          this.style.width = scrollWidth + 'px';
+      }
+      
+      // Call the function initially to resize on page load
+      autoResize.call(textarea);
+  </script>
 </body>
 </html>
